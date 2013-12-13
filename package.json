@@ -1,0 +1,43 @@
+{
+  "name": "sum.js",
+  "version": "0.0.0",
+  "description": "Returns the sum of a list of numbers optionally pre-transforming each number for Node.js and the browser.",
+  "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "keywords": [
+    "sum",
+    "array",
+    "math",
+    "addition",
+    "fold",
+    "reduce"
+  ],
+  "main": "./index",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilmoore/sum.js"
+  },
+  "component": {
+    "scripts": {
+      "selectn": "index.js"
+    }
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "browserify": "~2.27.1",
+    "chai": "~1.8.1",
+    "jsonlint": "~1.6.0",
+    "mocha-phantomjs": "~3.2.0"
+  },
+  "jam": {
+    "include": [
+      "sum.js",
+      "Readme.md"
+    ]
+  },
+  "volo": {
+    "url": "https://raw.github.com/wilmoore/sum.js/v{version}/sum.js"
+  }
+}

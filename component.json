@@ -1,0 +1,19 @@
+{
+  "name": "sum.js",
+  "version": "0.1.0",
+  "description": "Returns the sum of a list of numbers optionally pre-transforming each number for Node.js and the browser.",
+  "repo": "wilmoore/sum.js",
+  "keywords": [
+    "sum",
+    "array",
+    "math",
+    "addition",
+    "fold",
+    "reduce"
+  ],
+  "dependencies": {},
+  "development": {},
+  "scripts": [
+    "index.js"
+  ]
+}
