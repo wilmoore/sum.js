@@ -1,6 +1,6 @@
 {
   "name": "sum.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Sum a list of number literals, nested object property values, or values returned from a custom function for Node.js and the browser.",
   "repo": "wilmoore/sum.js",
   "keywords": [

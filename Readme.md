@@ -35,10 +35,6 @@
 
 [![NPM](https://nodei.co/npm/sum.js.png?downloads=true)](https://nodei.co/npm/sum.js/)
 
-[jam](http://jamjs.org/packages/#/details/sum.js)
-
-    $ jam install sum.js
-
 [volo](http://volojs.org)
 
     $ volo add wilmoore/sum.js
