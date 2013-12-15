@@ -1,15 +1,21 @@
 # sum.js [![Build Status](https://travis-ci.org/wilmoore/sum.js.png?branch=master)](https://travis-ci.org/wilmoore/sum.js) [![Build Status](https://david-dm.org/wilmoore/sum.js.png)](https://david-dm.org/wilmoore/sum.js) [![NPM version](https://badge.fury.io/js/sum.js.png)](http://badge.fury.io/js/sum.js)
 
-  Returns the sum of a list of numbers optionally pre-transforming each number for [Node.js][] and the browser.
+  Returns the sum of a list supporting number literals, nested objects, or transformation function for [Node.js][] and the browser.
 
 ## Examples
 
-#### Sum a list of numbers
+#### Number literals
 
-    sum([1, 2, 3, 4])
+    sum([1, 2, 3, 4]);
     //=> 10
 
-#### Sum a list of numbers with a tranformation function
+#### Nested objects
+
+    var paychecks = [ { amount: 500.00 }, { amount: 700.00 } ];
+    sum(paychecks, 'amount');
+    //=> 1200.00
+
+#### Tranformation function
 
     var toSeconds = function (n) { n * 60 };
     sum([1, 2, 3, 4], toSeconds);

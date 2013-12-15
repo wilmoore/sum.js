@@ -39,5 +39,8 @@
   },
   "volo": {
     "url": "https://raw.github.com/wilmoore/sum.js/v{version}/sum.js"
+  },
+  "dependencies": {
+    "selectn": "~0.9.6"
   }
 }

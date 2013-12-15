@@ -19,4 +19,15 @@ describe('sum', function () {
     assert.strictEqual(sum([2, 3], toSeconds), 300);
   });
 
+  it('correctly calculates the sum of a list with objects', function () {
+    var paychecks = [
+      { amount: 500.00 },
+      { amount: 700.00 },
+      { amount: 550.71 },
+      { amount: 700.25 },
+    ];
+
+    assert.strictEqual(sum(paychecks, 'amount'), 2450.96);
+  });
+
 });
