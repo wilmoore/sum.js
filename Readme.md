@@ -15,10 +15,9 @@
     sum(strings, 'length');
     //=> 18
 
-#### Tranformation function
+#### Custom function
 
-    var toSeconds = function (n) { n * 60 };
-    sum([1, 2, 3, 4], toSeconds);
+    sum([1, 2, 3, 4], function (n) { n * 60 });
     //=> 600
 
 ## Installation

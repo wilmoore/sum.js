@@ -7,7 +7,7 @@ var toString = ({}).toString;
 /**
  * Returns the sum of a list supporting number literals, nested objects, or transformation function.
  *
- * #### Sum a list of numbers
+ * #### Number literals
  *
  *    sum([1, 2, 3, 4])
  *    //=> 10
@@ -18,10 +18,9 @@ var toString = ({}).toString;
  *    sum(strings, 'length');
  *    //=> 18
  *
- * #### Sum a list of numbers with a tranformation function
+ * #### Custom function
  *
- *    var toSeconds = function (n) { n * 60 };
- *    sum([1, 2, 3, 4], toSeconds);
+ *    sum([1, 2, 3, 4], function (n) { n * 60 });
  *    //=> 600
  *
  * @param  {Array} list
