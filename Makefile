@@ -8,7 +8,10 @@ clean:
 	@$(RM) -fr npm-debug.log
 
 $(STANDALONE).js: index.js
-	@./node_modules/.bin/browserify --entry $< --outfile $@ --standalone $(STANDALONE) 
+	@./node_modules/.bin/browserify --entry $< --outfile $@ --standalone $(STANDALONE)
+
+$(STANDALONE).min.js: $(STANDALONE).js
+	@./node_modules/.bin/uglifyjs $< --output $@
 
 test: node_modules $(STANDALONE).js
 	@echo Running Node.js tests
@@ -26,4 +29,4 @@ node_modules: package.json
 	@npm prune
 	@npm install
 
-release: test $(STANDALONE).js
+release: test $(STANDALONE).min.js

@@ -47,10 +47,14 @@
 
 1. download
 
+        % curl -#O https://raw.github.com/wilmoore/sum.js/master/sum.min.js
+        or
         % curl -#O https://raw.github.com/wilmoore/sum.js/master/sum.js
 
 2. use
 
+        <script src="sum.min.js"></script>
+        or
         <script src="sum.js"></script>
 
 ## License
