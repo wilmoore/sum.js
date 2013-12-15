@@ -19,6 +19,12 @@ describe('sum', function () {
     assert.strictEqual(sum([2, 3], toSeconds), 300);
   });
 
+  it('correctly calculates the sum of a list with strings', function () {
+    var strings = ['literal', 'constructor'];
+
+    assert.strictEqual(sum(strings, 'length'), 18);
+  });
+
   it('correctly calculates the sum of a list with objects', function () {
     var paychecks = [
       { amount: 500.00 },

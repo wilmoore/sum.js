@@ -9,27 +9,27 @@ var toString = ({}).toString;
  *
  * #### Sum a list of numbers
  *
- *     sum([1, 2, 3, 4])
- *     //=> 10
+ *    sum([1, 2, 3, 4])
+ *    //=> 10
  *
- * #### Nested objects
+ * #### Nested object properties
  *
- *     var paychecks = [ { amount: 500.00 }, { amount: 700.00 } ];
- *     sum(paychecks, 'amount');
- *     //=> 1200.00
+ *    var strings = [ 'literal', 'constructor' ];
+ *    sum(strings, 'length');
+ *    //=> 18
  *
  * #### Sum a list of numbers with a tranformation function
  *
- *     var toSeconds = function (n) { n * 60 };
- *     sum([1, 2, 3, 4], toSeconds);
- *     //=> 600
+ *    var toSeconds = function (n) { n * 60 };
+ *    sum([1, 2, 3, 4], toSeconds);
+ *    //=> 600
  *
  * @param  {Array} list
  * list of numbers or list that will contain numbers after transforming.
  *
  * @param  {Function|String} [fun]
  * function which is given the current item and returns a number to be included in sum
- * or dot notation object property string (i.e. `user.name`).
+ * or dot notation object property string (i.e. `length`).
  *
  * @return {Array}
  * sum of list

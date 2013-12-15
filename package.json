@@ -1,7 +1,7 @@
 {
   "name": "sum.js",
   "version": "0.1.0",
-  "description": "Returns the sum of a list of numbers optionally pre-transforming each number for Node.js and the browser.",
+  "description": "Sum a list of number literals, nested object property values, or values returned from a custom function for Node.js and the browser.",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "keywords": [
     "sum",

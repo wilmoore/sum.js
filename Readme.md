@@ -1,6 +1,6 @@
 # sum.js [![Build Status](https://travis-ci.org/wilmoore/sum.js.png?branch=master)](https://travis-ci.org/wilmoore/sum.js) [![Build Status](https://david-dm.org/wilmoore/sum.js.png)](https://david-dm.org/wilmoore/sum.js) [![NPM version](https://badge.fury.io/js/sum.js.png)](http://badge.fury.io/js/sum.js)
 
-  Returns the sum of a list supporting number literals, nested objects, or transformation function for [Node.js][] and the browser.
+  Sum a list of number literals, nested object property values, or values returned from a custom function for [Node.js][] and the browser.
 
 ## Examples
 
@@ -9,11 +9,11 @@
     sum([1, 2, 3, 4]);
     //=> 10
 
-#### Nested objects
+#### Nested object properties
 
-    var paychecks = [ { amount: 500.00 }, { amount: 700.00 } ];
-    sum(paychecks, 'amount');
-    //=> 1200.00
+    var strings = ['literal', 'constructor'];
+    sum(strings, 'length');
+    //=> 18
 
 #### Tranformation function
 
