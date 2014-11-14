@@ -1,6 +1,8 @@
-# sum.js [![Build Status](https://travis-ci.org/wilmoore/sum.js.png?branch=master)](https://travis-ci.org/wilmoore/sum.js) [![Build Status](https://david-dm.org/wilmoore/sum.js.png)](https://david-dm.org/wilmoore/sum.js) [![NPM version](https://badge.fury.io/js/sum.js.png)](http://badge.fury.io/js/sum.js)
+# sum.js
 
-  Sum a list of number literals, nested object property values, or values returned from a custom function for [Node.js][] and the browser.
+[![Build Status](http://img.shields.io/travis/wilmoore/sum.js.svg)](https://travis-ci.org/wilmoore/sum.js) [![NPM version](http://img.shields.io/npm/v/sum.js.svg)](https://www.npmjs.org/package/sum.js) [![NPM downloads](http://img.shields.io/npm/dm/sum.js.svg)](https://www.npmjs.org/package/sum.js) [![LICENSE](http://img.shields.io/npm/l/sum.js.svg)](license)
+
+> Sum a list of number literals, nested object property values, or values returned from a custom function for [Node.js][] and the browser.
 
 ## Examples
 
@@ -54,7 +56,7 @@
 
 ## License
 
-  MIT
+  [MIT](license)
 
 [Node.js]:  http://nodejs.org
 [manual]:   http://yuiblog.com/blog/2006/06/01/global-domination/
